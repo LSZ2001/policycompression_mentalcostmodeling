@@ -13,10 +13,10 @@ addpath(genpath(main_folder))
 The code runs on Matlab version R2023a. 
 
 ## Online experiments
-- Experiment 1: https://gershmanlab.com/experiments/shuze/bandits/experiment/index_exp1.html
-- Experiment 2: https://gershmanlab.com/experiments/shuze/bandits/experiment/index_exp3.html
-- Experiment 3:
-- Experiment 4: https://gershmanlab.com/experiments/shuze/bandits_IT/experiment/index_exp2.html
+- Experiment 1 (ITI): https://gershmanlab.com/experiments/shuze/bandits/experiment/index_exp1.html
+- Experiment 2 (set size 2,4,6): https://gershmanlab.com/experiments/shuze/bandits/experiment/index_exp3.html
+- Experiment 3 (set size 2,6,7):
+- Experiment 4 (reward magnitude): https://gershmanlab.com/experiments/shuze/bandits_IT/experiment/index_exp2.html
 
 ## Main folder
 - **merge_experiments_data.m** merge datafiles from Experiments 1 to 4, and saves them as a joint datafile *exps_all_rewardmag75perc.mat*. For Experiment 4, a transformation of the reward matrix of the low reward magnitude condition was applied.
