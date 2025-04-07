@@ -26,7 +26,7 @@ exps.exp_ITI = exp_ITI; exps.exp_Ns246 = exp_Ns246;
 %save("data\exps.mat","exps")
 
 %% Experiment 3
-load(datapath + "iti_bandit_data_exp3_old7.mat");
+load(datapath + "iti_bandit_data_exp3_267.mat");
 data = datas.test;
 survey_exps.exp_Ns267 = datas.survey;
 genders = [];
