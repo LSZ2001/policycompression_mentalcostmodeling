@@ -13,18 +13,21 @@ addpath(genpath(main_folder))
 The code runs on Matlab version R2023a. 
 
 ## Online experiments
-- Experiment 1 (ITI): https://gershmanlab.com/experiments/shuze/bandits/experiment/index_exp1.html
-- Experiment 2 (set size 2,4,6): https://gershmanlab.com/experiments/shuze/bandits/experiment/index_exp3.html
-- Experiment 3 (set size 2,6,7):
-- Experiment 4 (reward magnitude): https://gershmanlab.com/experiments/shuze/bandits_IT/experiment/index_exp2.html
+- Experiment 1 (ITI 0s, 0.5s, 2s): https://gershmanlab.com/experiments/shuze/bandits_mcmodeling/index_exp1.html
+- Experiment 2 (set size 2, 4, 6): https://gershmanlab.com/experiments/shuze/bandits_mcmodeling/index_exp3.html
+- Experiment 3 (set size 2, 6, 7): https://gershmanlab.com/experiments/shuze/bandits_mcmodeling/index_exp3_267.html
+- Experiment 4 (reward magnitude low, high): https://gershmanlab.com/experiments/shuze/bandits_mcmodeling/index_exp4.html
 
 ## Main folder
 - **merge_experiments_data.m** merge datafiles from Experiments 1 to 4, and saves them as a joint datafile *exps_all_rewardmag75perc.mat*. For Experiment 4, a transformation of the reward matrix of the low reward magnitude condition was applied.
 - **numpyro_individualfits_allmodels.ipynb** fits NUTS models for each participant in each experiment. 
 - **plot_manuscript_figures_all4exps_visualize_CogSci.m** creates all figures for the manuscript, based on the datafiles and the saved NUTS model fits.
 
+## *experiment* subfolder
+- Contains jsPsych code for the above experiments. 
+
 ## *data* subfolder
-- *iti_bandit_data_oldexp1.mat*, *iti_bandit_data_oldexp3.mat*, *iti_bandit_data_exp3_old7.mat*, and *iti_bandit_data_exp_rewardmag* are the raw datafiles for Experiments 1 to 4. For Experiments 1-3, we excluded all participants who, in any test block, had an average RT over 5 seconds. For Experiment 4, we excluded all participants who, in any test block, failed to respond within the response deadline for more than or equal to 20 trials. These datafiles are used by **plot_manuscript_figures_all4exps_visualize_CogSci.m** above.
+- *iti_bandit_data_oldexp1.mat*, *iti_bandit_data_oldexp3.mat*, *iti_bandit_data_exp3_267.mat*, and *iti_bandit_data_exp_rewardmag* are the raw datafiles for Experiments 1 to 4. For Experiments 1-3, we excluded all participants who, in any test block, had an average RT over 5 seconds. For Experiment 4, we excluded all participants who, in any test block, failed to respond within the response deadline for more than or equal to 20 trials. These datafiles are used by **plot_manuscript_figures_all4exps_visualize_CogSci.m** above.
 - Among the above, *.mat* files with the suffix *_noexclusion* do not apply the exclusion criterion. Hence they include both included and excluded participants. 
 
 ## *figures* subfolder
