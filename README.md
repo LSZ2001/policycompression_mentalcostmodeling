@@ -10,7 +10,7 @@ All code assumes that the current directory of Matlab is the main folder. Hence,
 cd(main_folder)
 addpath(genpath(main_folder))
 ```
-The code runs on Matlab version R2023a. 
+The code runs on Matlab version R2023a and Python 3. 
 
 ## Online experiments
 - Experiment 1 (ITI 0s, 0.5s, 2s): https://gershmanlab.com/experiments/shuze/bandits_mcmodeling/index_exp1.html
